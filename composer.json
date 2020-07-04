@@ -1,0 +1,11 @@
+{
+    "name": "zinobe/zdk",
+    "description": "ZDK(is SDK) for Zinobe API's",
+    "authors": [
+        {
+            "name": "SandoDev",
+            "email": "camilo.sandoval@zinobe.com"
+        }
+    ],
+    "require": {}
+}
