@@ -9,3 +9,7 @@ $postdata = array(
 $api = $client->service("zevents");
 $result = $api->download_profile($postdata);
 print_r($result);
+
+// $api = $client->service("test_service");
+// $result = $api->some_method();
+// print_r($result);
