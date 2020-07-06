@@ -7,5 +7,10 @@
             "email": "camilo.sandoval@zinobe.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload":{
+        "psr-4": {
+            "zdk\\":"zdk/"
+        }
+    }
 }

@@ -12,7 +12,7 @@
 // print_r(callZevents('download_profile', $postdata));
 include_once(__DIR__ . '/../zdk/client.php');
 
-// $api1 = client('other_service');
+//$api1 = client('other_service');
 // $result = $api1->call_some();
 // print_r($result);
 

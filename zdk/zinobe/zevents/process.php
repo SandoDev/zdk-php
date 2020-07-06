@@ -2,7 +2,7 @@
 
 function callZevents($service, $postdata)
 {
-    $url = 'http://4c12af8bfbc7.ngrok.io/api/v1/' . $service;
+    $url = 'http://6aaacc111108.ngrok.io/api/v1/' . $service;
     $opts = array('http' =>
     array(
         'method'  => 'POST',
