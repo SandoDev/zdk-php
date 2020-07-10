@@ -1,16 +1,17 @@
 <?php
+include('vendor/rmccue/requests/library/Requests.php');
 
 function callZevents($service, $postdata)
 {
-    $url = 'http://6aaacc111108.ngrok.io/api/v1/' . $service;
-    $opts = array('http' =>
-    array(
-        'method'  => 'POST',
-        'header'  => 'Content-type: application/json',
-        'content' => json_encode($postdata)
-    ));
+    $url = 'https://zevent.sg-zinobe.com:443/api/v1/' . $service;
+    $opts = array(
+        'Content-Type' => 'application/json; charset=utf-8',
+        "Accept"=> "application/json"
+    );
+    Requests::register_autoloader();
+    $result = Requests::post($url, $opts, $postdata);
 
-    $context = stream_context_create($opts);
-    $result = file_get_contents($url, false, $context);
+    // $context = stream_context_create($opts
+    // $result = file_get_contents($url, false, $context);
     return $result;
 }
