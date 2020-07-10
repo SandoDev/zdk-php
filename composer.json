@@ -7,7 +7,9 @@
             "email": "camilo.sandoval@zinobe.com"
         }
     ],
-    "require": {},
+    "require": {
+        "rmccue/requests": "^1.7"
+    },
     "autoload":{
         "psr-4": {
             "zdk\\":"zdk/"
