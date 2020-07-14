@@ -12,7 +12,7 @@
     },
     "autoload":{
         "psr-4": {
-            "zdk\\":"zdk/"
+            "Zinobe\\Zdk\\":"src/"
         }
     }
 }
