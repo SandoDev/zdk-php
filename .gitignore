@@ -39,3 +39,4 @@ composer.phar
 # End of https://www.toptal.com/developers/gitignore/api/composer,visualstudiocode,git
 
 call.php
+composer.lock

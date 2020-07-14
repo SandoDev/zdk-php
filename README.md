@@ -24,10 +24,13 @@ composer require zinobe/zdk
 ### Implement
 
 ```php
-include __DIR__ . "/../vendor/autoload.php";
+include __DIR__ . "/vendor/autoload.php";
 
-$client = new \zdk\ClientServices();
-$api = $client->service("name_of_service");
-$result = $api->method_of_service();
+use Zinobe\Zdk\ClientServices;
+
+$client = new ClientServices();
+$api = $client->service("zevents");
+$postdata = '{"identity":"1032498297"}';
+$result = $api->download_profile($postdata);
 print_r($result);
 ```

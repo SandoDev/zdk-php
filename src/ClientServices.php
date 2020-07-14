@@ -1,9 +1,9 @@
 <?php
 
-namespace zdk;
+namespace Zinobe\Zdk;
 
-use Exception;
-use Factory;
+use \Exception;
+use Zinobe\Zdk\Core\Factory;
 
 class ClientServices
 {
@@ -17,7 +17,6 @@ class ClientServices
      */
     public function service($service)
     {
-        include(__DIR__ . '/../zdk/core/factory.php');
         try {
             $instance = new Factory($service);
             return $instance->getInstance();
